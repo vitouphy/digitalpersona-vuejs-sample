@@ -4904,6 +4904,7 @@
     } else if (typeof exports === 'object') {
       return module.exports = factory();
     } else {
+      root = root || (typeof window !== 'undefined' ? window : global);
       return root.ifvisible = factory();
     }
   })(this, function() {

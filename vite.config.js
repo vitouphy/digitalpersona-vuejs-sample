@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   optimizeDeps: {
-    include: ['src/modules/WebSdk/index.js']
+    exclude: ['WebSdk']
   },
   build: {
     rollupOptions: {
@@ -14,11 +14,11 @@ export default defineConfig({
           WebSdk: 'WebSdk'
         }
       }
-    },
+    }
   },
-  // resolve: {
-  //   alias: {
-  //     'WebSdk': './src/modules/WebSdk/index.js'
-  //   }
-  // }
+  resolve: {
+    alias: {
+      'WebSdk': '/src/modules/WebSdk/index.js'
+    }
+  }
 })
