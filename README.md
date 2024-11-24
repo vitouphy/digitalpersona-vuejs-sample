@@ -11,6 +11,45 @@ This project demonstrates how to integrate the DigitalPersona Fingerprint Reader
 
 ## Installation
 
+1. Install the DigitalPersona U.are.U 4500 driver for Windows:
+
+   - Download the driver from the official DigitalPersona website
+   - Run the installer and follow the setup wizard
+   - Connect your fingerprint reader device
+   - Verify that Windows recognizes the device in Device Manager
+
+2. Clone the repository
+3. Install dependencies:
+
+```bash
+pnpm install
+```
+
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+5. Open your browser and navigate to:
+
+```
+http://localhost:5173
+```
+
+6. Test the fingerprint reader:
+   - Click the "Start Capturing Fingerprint" button
+   - Place your finger on the reader
+   - The captured fingerprint image should appear on the screen
+
+Note: If you encounter any issues:
+
+- Make sure the fingerprint reader is properly connected
+- Check that the driver is correctly installed
+- Check the browser console for any error messages
+
+## How to integrate into your project
+
 1. Install the DigitalPersona device library:
 
 ```bash
@@ -41,9 +80,8 @@ export default defineConfig({
 });
 ```
 
-## Important Fix
-
-We needed to add the following line to `WebSdk/index.js` to resolve a runtime error:
+5. Manually fix the runtime error
+   We needed to add the following line to `WebSdk/index.js` to resolve a runtime error:
 
 ```javascript
 root = root || (typeof window !== "undefined" ? window : global);
@@ -52,7 +90,7 @@ return (root.ifvisible = factory());
 
 This fix was suggested by an LLM and works for our use case.
 
-## Usage
+## Examples
 
 Here's a basic example of how to use the fingerprint reader:
 
