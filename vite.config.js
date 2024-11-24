@@ -6,16 +6,6 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['WebSdk']
   },
-  build: {
-    rollupOptions: {
-      external: ['WebSdk'],
-      output: {
-        globals: {
-          WebSdk: 'WebSdk'
-        }
-      }
-    }
-  },
   resolve: {
     alias: {
       'WebSdk': '/src/modules/WebSdk/index.js'
