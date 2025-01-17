@@ -134,6 +134,9 @@ onMounted(() => {
 - The DigitalPersona drivers are primarily designed for Windows OS
 - Mac OS support is uncertain and untested
 
+## References
+- https://hidglobal.github.io/digitalpersona-devices/tutorial.html
+
 ## Contributing
 
 Feel free to submit issues and enhancement requests!
