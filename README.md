@@ -15,6 +15,7 @@ This project demonstrates how to integrate the DigitalPersona Fingerprint Reader
 
    - Download the [driver](https://www.hidglobal.com/de/media/4502) from the official DigitalPersona website 
    - Run the installer and follow the setup wizard
+   - Download [DigitalPersona Lite Client](https://crossmatch.hid.gl/lite-client)
    - Connect your fingerprint reader device
    - Verify that Windows recognizes the device in Device Manager
 
