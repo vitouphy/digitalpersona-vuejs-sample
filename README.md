@@ -13,7 +13,7 @@ This project demonstrates how to integrate the DigitalPersona Fingerprint Reader
 
 1. Install the DigitalPersona U.are.U 4500 driver for Windows:
 
-   - Download the driver from the official DigitalPersona website
+   - Download the [driver](https://www.hidglobal.com/de/media/4502) from the official DigitalPersona website 
    - Run the installer and follow the setup wizard
    - Connect your fingerprint reader device
    - Verify that Windows recognizes the device in Device Manager
